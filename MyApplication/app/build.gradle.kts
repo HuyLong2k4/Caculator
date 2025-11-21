@@ -33,12 +33,17 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     buildToolsVersion = "36.0.0"
     ndkVersion = "26.1.10909125"
 }
 
 dependencies {
-
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
